@@ -18,11 +18,14 @@ function verificarEsPrimo(numero) {
 
 function verificar() {
   var numero = document.getElementById("txtNumero").value;
+  const PI = 3.14;
+  var resultado = 0.0;
 
   if (!numero == "") {
     var esPrimo = verificarEsPrimo(parseInt(numero));
     if (esPrimo) {
-      alert("!!!..Es un numero primo..!!!.");
+      resultado = numero * PI;
+      alert("!!!..Es un numero primo..!!!.<br>Se procede a Multiplicar por la constante PI: 3.14.<br>Resultado: "+resultado);
     } else {
       alert("!!!..No es un numero primo..!!!.");
     }
