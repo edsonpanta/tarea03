@@ -22,6 +22,10 @@ function verificar() {
   var resultado = 0.0;
 
   if (!numero == "") {
+    if(isNaN(numero)){
+      alert("!!!..Ingrese un valor numerico valido..!!!.");
+      return;
+    }
     var esPrimo = verificarEsPrimo(parseInt(numero));
     if (esPrimo) {
       resultado = numero * PI;
